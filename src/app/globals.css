@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: 'Cormorant Garamond';
+  --font-sans: 'Inter';
+  --bg: #f7f3ea;
+  --bg-alt: #eee7d8;
+  --surface: #fffdf8;
+  --text: #282824;
+  --text-muted: #5f6159;
+  --border: #dcd3c0;
+  --accent: #18352d;
+  --accent-soft: #e7ede8;
+  --eyebrow: #71562e;
+}
+
+.dark {
+  --bg: #10251f;
+  --bg-alt: #18352d;
+  --surface: #1a322a;
+  --text: #f2ece0;
+  --text-muted: #c3cbc2;
+  --border: #385449;
+  --accent: #ddc69b;
+  --accent-soft: #25493d;
+  --eyebrow: #c5a46d;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: #c5a46d; color: #10251f; }
+
+:focus-visible {
+  outline: 3px solid #c5a46d;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@layer components {
+  .container-page { @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12; }
+  .container-narrow { @apply mx-auto w-full max-w-4xl px-5 sm:px-8; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.22em]; color: var(--eyebrow); }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn bg-forest text-ivory hover:bg-forest-light dark:bg-gold dark:text-forest-deep dark:hover:bg-gold-light; }
+  .btn-secondary { @apply btn border border-gold/70 bg-transparent text-forest hover:bg-forest/5 dark:border-gold/60 dark:text-gold dark:hover:bg-gold/10; }
+  .btn-ghost { @apply btn px-4 py-2 text-forest hover:bg-forest/5 dark:text-ivory dark:hover:bg-white/5; }
+  .btn-sm { @apply px-4 py-2 text-xs; }
+  .card { @apply rounded-md border border-[var(--border)] bg-[var(--surface)] shadow-card; }
+  .surface { @apply bg-[var(--surface)]; }
+  .chip { @apply inline-flex items-center gap-1.5 rounded-full border border-[var(--border)] px-3 py-1 text-xs font-medium text-[var(--text-muted)]; }
+  .input { @apply w-full rounded-sm border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm text-[var(--text)] placeholder:text-[var(--text-muted)] focus:border-gold focus:outline-none; }
+  .label { @apply mb-2 block text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)]; }
+  .divider-gold { @apply h-px w-16 bg-gold; }
+  .link-gold { @apply text-gold-dark underline decoration-gold/40 underline-offset-4 hover:decoration-gold dark:text-gold; }
+}
+
+/* Dark sections keep gold accents in both light and dark reading modes. */
+:where(
+  [class~="bg-forest"],
+  [class~="bg-forest-deep"],
+  [class~="bg-forest-deep/40"],
+  [class~="bg-forest-deep/50"],
+  [class~="bg-forest-deep/60"],
+  [class~="bg-forest-deep/85"],
+  [class~="bg-forest/60"]
+) {
+  --eyebrow: #c5a46d;
+}
+:where(
+  [class~="bg-forest"],
+  [class~="bg-forest-deep"],
+  [class~="bg-forest-deep/40"],
+  [class~="bg-forest-deep/50"],
+  [class~="bg-forest-deep/60"],
+  [class~="bg-forest-deep/85"],
+  [class~="bg-forest/60"]
+) .text-gold-dark { color: #c5a46d; }
+
+.prose-faith { color: var(--text); font-size: 1.0625rem; line-height: 1.85; }
+.prose-faith p { margin: 0 0 1.25rem; }
+.prose-faith h2 { font-family: var(--font-serif), Georgia, serif; font-size: 2rem; line-height: 1.2; margin: 2.25rem 0 0.75rem; color: var(--text); }
+.prose-faith h3 { font-family: var(--font-serif), Georgia, serif; font-size: 1.5rem; line-height: 1.25; margin: 1.75rem 0 0.5rem; color: var(--text); }
+.prose-faith ul, .prose-faith ol { margin: 0 0 1.25rem; padding-left: 1.4rem; }
+.prose-faith li { margin-bottom: 0.5rem; }
+.prose-faith ul { list-style: disc; }
+.prose-faith ol { list-style: decimal; }
+.prose-faith li::marker { color: #71562e; }
+.prose-faith strong { font-weight: 600; color: var(--text); }
+.prose-faith blockquote { border-left: 3px solid #c5a46d; padding-left: 1.25rem; margin: 1.5rem 0; font-family: var(--font-serif), Georgia, serif; font-size: 1.35rem; font-style: italic; color: var(--text-muted); }
+.prose-faith a { color: #71562e; text-decoration: underline; text-underline-offset: 3px; }
+.dark .prose-faith a { color: #c5a46d; }
+
+.prayer-text { white-space: pre-line; font-family: var(--font-serif), Georgia, serif; font-size: 1.3rem; line-height: 1.7; }
+
+.hero-overlay {
+  background: linear-gradient(90deg, rgba(10, 27, 22, 0.92) 0%, rgba(10, 27, 22, 0.72) 45%, rgba(10, 27, 22, 0.22) 100%);
+}
+
+.pattern-cross {
+  background-image: radial-gradient(rgba(197,164,109,.16) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
+@media print {
+  header, footer, .no-print { display: none !important; }
+  body { background: #fff; color: #000; }
+  .card { box-shadow: none; border-color: #ccc; }
+}

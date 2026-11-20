@@ -1,0 +1,236 @@
+import type { Sacrament } from './types';
+
+export const sacraments: Sacrament[] = [
+  {
+    id: 'baptism', name: 'Baptism', type: 'Initiation',
+    subtitle: 'Born again of water and the Spirit',
+    what: 'Baptism is the sacrament by which a person is born into the life of God, is forgiven sin, and becomes a member of the Church. It is the foundation of the Christian life and the gate to all the other sacraments. The usual minister is a bishop, priest, or deacon, though in an emergency anyone may baptise with water and the Trinitarian formula.',
+    why: 'Jesus commanded his disciples to “make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit” (Matthew 28:19). Baptism unites us with Christ’s death and Resurrection: we die to sin and rise to new life.',
+    biblical: ['Matthew 28:18–20', 'John 3:5 — “No one can enter the kingdom of God without being born of water and Spirit.”', 'Romans 6:3–4', 'Colossians 2:12'],
+    celebration: [
+      'The celebrant receives the candidate and asks for a profession of faith.',
+      'He breathes on the water (the epiclesis) and blesses it, invoking the Holy Spirit.',
+      'The person is immersed in water, or water is poured over the head, while the words are spoken: “I baptize you in the name of the Father, and of the Son, and of the Holy Spirit.”',
+      'The newly baptised is anointed with chrism, clothed in a white garment, and given a candle lit from the Paschal candle.',
+      'The community welcomes the new member, often followed by the Eucharist.',
+    ],
+    effects: [
+      'Forgiveness of original sin and all personal sins committed before Baptism.',
+      'A share in God’s sanctifying grace and the gifts of the Holy Spirit.',
+      'Membership in the Church and the call to holiness and mission.',
+      'An indelible spiritual character — Baptism is not repeated.',
+    ],
+    who: 'All human beings who have not yet been baptised may be baptised. In the Latin Church, infants are normally baptised soon after birth, with the parents’ commitment to raise them in the faith. Adults and older children go through the catechumenate (OCIA).',
+    preparation: [
+      'For an adult: participation in OCIA, catechesis, Scripture, prayer, and a period of conversion.',
+      'For parents: instruction in the faith, choosing godparents who are practising Catholics, and preparing for the promises they make on behalf of the child.',
+      'The community prays for the catechumens and supports them throughout the process.',
+    ],
+    teaching: [
+      'Catholics believe that Baptism is necessary for salvation, while recognising that God’s mercy is not bound by the sacraments: those who, through no fault of their own, do not know Christ but seek God with a sincere heart can be saved (CCC 1257–1261).',
+      'Baptism by desire — an explicit or implicit desire to be baptised — is recognised by the Church.',
+      'A valid Christian Baptism with water and the Trinitarian formula is recognised by the Catholic Church; a person who has received it is not baptised again.',
+    ],
+    ccc: ['CCC 1213–1284'],
+  },
+  {
+    id: 'confirmation', name: 'Confirmation', type: 'Initiation',
+    subtitle: 'Sealed with the gift of the Holy Spirit',
+    what: 'Confirmation is the sacrament in which the baptised are anointed with chrism and strengthened by the Holy Spirit, marking them more fully as members of Christ and witnesses of the faith. It is one of the sacraments of Christian initiation, together with Baptism and the Eucharist.',
+    why: 'In the New Testament the apostles lay hands on the newly baptised so that they may receive the Holy Spirit (Acts 8:14–17; Acts 19:5–6). Confirmation continues this apostolic gesture and completes the grace of Baptism.',
+    biblical: ['Acts 8:14–17', 'Acts 19:5–6', '2 Corinthians 1:21–22', 'Ephesians 1:13'],
+    celebration: [
+      'The candidates renew their baptismal promises and renounce sin.',
+      'The bishop (or a priest delegated in certain cases) lays hands on them, invoking the Holy Spirit.',
+      'He anoints each person’s forehead with chrism, saying: “Be sealed with the Gift of the Holy Spirit.”',
+      'The candidate replies “Amen,” and the bishop may exchange a sign of peace.',
+      'The liturgy usually includes the Eucharist.',
+    ],
+    effects: [
+      'A new outpouring of the Holy Spirit and a deepening of baptismal grace.',
+      'An indelible character, configuring the person more closely to Christ.',
+      'Strength to witness to the faith in word and deed.',
+    ],
+    who: 'A baptised person who has reached the age of discretion (about seven) and is properly prepared. In the Latin Church the usual minister is the bishop; in the Eastern Churches the priest may confirm, using a different rite.',
+    preparation: [
+      'Catechesis on the faith, the sacraments, and Christian discipleship.',
+      'A retreat or period of prayer and reflection.',
+      'Choosing a sponsor who is a confirmed, practising Catholic.',
+      'Confession before the celebration is customary.',
+    ],
+    teaching: [
+      'Confirmation is not a “graduation” from the Church but a sending into deeper mission.',
+      'It may be celebrated at different ages according to diocesan practice; the grace is the same.',
+      'Even when Confirmation is received later, the Eucharist remains the centre of Christian initiation.',
+    ],
+    ccc: ['CCC 1285–1321'],
+  },
+  {
+    id: 'eucharist', name: 'Eucharist', type: 'Initiation',
+    subtitle: 'The Body and Blood of Christ',
+    what: 'The Eucharist is the sacrament in which bread and wine become the Body and Blood of Christ, and the faithful receive him in Communion. It is the centre of Catholic worship: the Mass is the liturgy of the Eucharist, in which the Church gives thanks to the Father and is nourished by the Son.',
+    why: 'At the Last Supper Jesus said over the bread, “This is my Body,” and over the cup, “This is the chalice of my Blood… poured out for you and for many for the forgiveness of sins,” adding “Do this in remembrance of me” (Luke 22:19–20).',
+    biblical: ['Matthew 26:26–30', 'John 6:32–59', '1 Corinthians 10:16–17', '1 Corinthians 11:23–26'],
+    celebration: [
+      'The Liturgy of the Word prepares the assembly to receive Christ in his word.',
+      'The gifts of bread and wine are brought forward and offered.',
+      'In the Eucharistic Prayer the priest gives thanks, invokes the Spirit, and speaks the words of institution.',
+      'The people proclaim the mystery of faith and pray the Lord’s Prayer.',
+      'Those who are properly disposed receive Holy Communion, and the assembly is sent out in peace.',
+    ],
+    effects: [
+      'A real, substantial union with Christ and with his Church.',
+      'Increase of sanctifying grace, forgiveness of venial sins, and protection from grave sin.',
+      'A pledge of future glory and the resurrection of the body.',
+    ],
+    who: 'Any Catholic who has been baptised, is free from unconfessed mortal sin, observes the fasting discipline, and has reached the age of reason with proper preparation. Non-Catholics normally do not receive, in respect of the unity of faith that Communion signifies; they are warmly welcomed to attend Mass and to pray.',
+    preparation: [
+      'Fasting from food and drink (water and medicine excepted) for one hour before Communion; three hours if fasting from food, according to the Church’s current discipline.',
+      'Confession when conscious of mortal sin.',
+      'Prayer before and thanksgiving after Communion.',
+      'For children: formation for First Holy Communion with parents and parish catechists.',
+    ],
+    teaching: [
+      'The Church teaches the Real Presence: Christ is present truly, really, and substantially under the appearances of bread and wine (CCC 1374).',
+      'Transubstantiation names the change of substance while the appearances remain.',
+      'Communion under one kind (the host alone) fully expresses the whole Christ; receiving from the chalice is an additional sign, not a “more complete” Communion.',
+    ],
+    ccc: ['CCC 1322–1419'],
+  },
+  {
+    id: 'penance', name: 'Penance and Reconciliation', type: 'Healing',
+    subtitle: 'Confession, forgiveness, and a new beginning',
+    what: 'Penance (also called Confession or Reconciliation) is the sacrament in which a baptised person confesses sins to a priest, receives absolution, and is given a penance. It is the ordinary means by which Catholics receive forgiveness for sins committed after Baptism.',
+    why: 'After the Resurrection, Jesus appeared to the apostles and said: “Receive the Holy Spirit. If you forgive the sins of any, they are forgiven them; if you retain the sins of any, they are retained” (John 20:22–23). The Church continues this ministry of reconciliation.',
+    biblical: ['John 20:19–23', 'Matthew 16:19', 'James 5:16', 'Luke 15:11–32 (the Prodigal Son)'],
+    celebration: [
+      'The priest welcomes the penitent; both may make the Sign of the Cross.',
+      'The penitent confesses sins, and the priest may offer counsel or ask questions.',
+      'The priest proposes a penance — a prayer, an act of charity, or a small sacrifice.',
+      'The penitent says an Act of Contrition.',
+      'The priest pronounces the absolution, making the Sign of the Cross:', '“I absolve you from your sins in the name of the Father, and of the Son, and of the Holy Spirit. Amen.”',
+      'The penitent gives thanks and carries out the penance.',
+    ],
+    effects: [
+      'Reconciliation with God and the Church.',
+      'Forgiveness of sins and restoration of sanctifying grace lost through mortal sin.',
+      'Peace of conscience and strength to resist temptation.',
+    ],
+    who: 'Any baptised Catholic who is sorry for sin, even if the sin is venial. The sacrament is necessary for mortal sin; it is recommended for venial sin. Children normally make their First Confession before First Communion.',
+    preparation: [
+      'An examination of conscience, preferably using the Ten Commandments or the commandment of love.',
+      'Sincere contrition — sorrow for sin because it offends God and damages our relationship with him.',
+      'A firm purpose of amendment: the intention to avoid the sin and its occasions.',
+      'Confessing each mortal sin in kind and number, as accurately as possible.',
+    ],
+    teaching: [
+      'The priest is bound by the seal of confession: he may never reveal what is said in confession, and no one may compel him.',
+      'Confession to a priest is not a substitute for personal repentance; both are required.',
+      'The Church does not require or encourage the disclosure of private matters to anyone outside confession. This website never asks users to submit confession information.',
+    ],
+    ccc: ['CCC 1420–1498'],
+  },
+  {
+    id: 'anointing', name: 'Anointing of the Sick', type: 'Healing',
+    subtitle: 'The Church’s prayer for the ill and the dying',
+    what: 'Anointing of the Sick is the sacrament in which a priest anoints a sick or elderly person with blessed oil and prays for healing, strength, and peace. It is a sacrament of healing, not a preparation for death only.',
+    why: 'St James wrote: “Is anyone among you sick? He should summon the presbyters of the Church, and they should pray over him and anoint him with oil in the name of the Lord” (James 5:14–15). Jesus himself healed many sick people and sent his disciples to do the same.',
+    biblical: ['James 5:13–16', 'Mark 6:13', 'Luke 10:9', 'Psalm 23'],
+    celebration: [
+      'The priest greets the sick person and the gathered family.',
+      'There may be a short reading from Scripture and a prayer of faith.',
+      'The priest lays hands on the person and anoints the forehead and hands with the Oil of the Sick: “Through this holy anointing may the Lord in his love and mercy help you with the grace of the Holy Spirit.”',
+      'The community prays for healing, and the person may receive Holy Communion (Viaticum if in danger of death).',
+    ],
+    effects: [
+      'A special gift of the Holy Spirit: strength, peace, and courage.',
+      'Forgiveness of sins if the person was unable to confess.',
+      'Physical healing when it is God’s will; spiritual healing always.',
+      'Preparation for the final journey if death is near.',
+    ],
+    who: 'Catholics who are seriously ill, weakened by age, or facing a serious medical procedure. It may be received more than once if the illness changes or worsens. It is not only for those near death.',
+    preparation: [
+      'Contact the parish office when someone is ill, hospitalised, or homebound.',
+      'Confession if the person is able.',
+      'Gather family in prayer if desired; the rite is often celebrated in a home, hospital, or church.',
+    ],
+    teaching: [
+      'Anointing is not a guarantee of physical cure and does not replace medical care.',
+      'It should be requested early in a serious illness, not only in the last moments.',
+      'The Oil of the Sick is blessed by the bishop at the Chrism Mass.',
+    ],
+    ccc: ['CCC 1499–1532'],
+  },
+  {
+    id: 'holy-orders', name: 'Holy Orders', type: 'Service of Communion',
+    subtitle: 'Ordained service for the building up of the Church',
+    what: 'Holy Orders is the sacrament in which men are ordained as deacons, priests, or bishops to serve the Church in a public and permanent way. Through ordination, Christ continues to shepherd his people through chosen ministers.',
+    why: 'Jesus chose the twelve apostles and gave them a share in his mission. He also instituted the Eucharist and commanded them to “do this in remembrance of me,” giving them the authority to act in his name (Luke 22:19; Matthew 16:19).',
+    biblical: ['Luke 22:19', 'Matthew 16:19', 'Acts 6:1–6', '1 Timothy 4:14', 'Titus 1:5'],
+    celebration: [
+      'The candidate is presented and examined by the bishop.',
+      'The bishop lays hands on the candidate — with the other bishops or priests in the case of a bishop or priest.',
+      'The bishop prays the ordination prayer and anoints the ordinand’s hands with chrism (for priests and bishops).',
+      'The new deacon, priest, or bishop receives the insignia of his office and is sent to serve.',
+    ],
+    effects: [
+      'An indelible character and a permanent configuration to Christ the Priest, Teacher, and Shepherd.',
+      'The grace to serve the Church faithfully and to lead others to holiness.',
+      'For priests and bishops, the authority to consecrate the Eucharist; for bishops, the fullness of holy orders.',
+    ],
+    who: 'In the Latin Church, celibate men who have completed the required formation and been called by their bishop; married men may be ordained as permanent deacons in many dioceses. The Eastern Churches have different disciplinary traditions.',
+    preparation: [
+      'Many years of formation: philosophy, theology, Scripture, spiritual direction, and pastoral experience.',
+      'A period as a deacon before priestly ordination.',
+      'Discernment with a vocations director and the diocesan bishop.',
+    ],
+    teaching: [
+      'Ordination is not a job appointment but a sacrament; the priest acts in persona Christi, “in the person of Christ,” especially at Mass.',
+      'The hierarchy exists to serve, not to dominate: “whoever wishes to be great among you shall be your servant” (Matthew 20:26).',
+      'Laypeople also have a vital mission in the Church, which flows from Baptism and Confirmation.',
+    ],
+    ccc: ['CCC 1536–1589'],
+  },
+  {
+    id: 'matrimony', name: 'Matrimony', type: 'Service of Communion',
+    subtitle: 'A lifelong covenant of love and family',
+    what: 'Matrimony is the sacrament in which a man and a woman are joined in a lifelong covenant of love, for the good of each other and the procreation and education of children. The spouses themselves confer the sacrament on one another in the presence of the Church’s witness.',
+    why: 'Genesis describes marriage as a union of two persons in one flesh (Genesis 2:24). Jesus raised it to a sacrament, teaching that what God has joined must not be separated (Mark 10:6–9), and St Paul compares it to the union of Christ and the Church (Ephesians 5:25–32).',
+    biblical: ['Genesis 1:27–28; 2:24', 'Mark 10:6–9', 'John 2:1–11', 'Ephesians 5:21–33', 'Hebrews 13:4'],
+    celebration: [
+      'The couple expresses their intention freely and publicly before the priest or deacon and the assembly.',
+      'They exchange consent: “I take you as my wife/husband, to have and to hold from this day forward…”',
+      'The priest or deacon confirms the union in the name of the Church and blesses the rings.',
+      'The couple exchange rings as a sign of their covenant.',
+      'The Mass continues with the Eucharist; the newlyweds may receive Communion together.',
+    ],
+    effects: [
+      'A sacred, indissoluble bond of love and fidelity.',
+      'Sanctifying grace to help the spouses love as Christ loves the Church.',
+      'A family, which the Church calls the “domestic church,” where faith is first lived.',
+    ],
+    who: 'A baptised man and a baptised woman who are free to marry, are not closely related, and enter the union freely and with the intention of a lifelong, faithful, open-to-life marriage.',
+    preparation: [
+      'Contact the parish several months in advance; dioceses typically require a formal preparation process.',
+      'Pre-Cana or equivalent marriage preparation, often with a sponsor couple.',
+      'Meeting with the priest or deacon to examine readiness and complete required documentation.',
+      'Confession before the wedding is customary.',
+    ],
+    teaching: [
+      'The Church cannot “annul” a valid marriage; an annulment is a judgement that a valid marriage never came into being because of a defect at the time of consent.',
+      'Marriage is a vocation, not a contract that can be ended at will. The Church’s teaching on divorce and remarriage is rooted in Christ’s own words.',
+      'Couples in irregular situations are always invited to speak with a priest; they are never to be treated as unwelcome in parish life.',
+    ],
+    ccc: ['CCC 1601–1666'],
+  },
+];
+
+export const sacramentTypes = ['Initiation', 'Healing', 'Service of Communion'] as const;
+
+export const typeExplanation: Record<string, string> = {
+  Initiation: 'Baptism, Confirmation, and the Eucharist lay the foundation of every Christian life. Through them we are born into God’s family, sealed by the Spirit, and fed with Christ’s Body and Blood.',
+  Healing: 'Penance and Anointing of the Sick bring Christ’s healing to the soul and body. They respond to the reality of sin, suffering, and human frailty.',
+  'Service of Communion': 'Holy Orders and Matrimony are sacraments in which a person is set aside for a particular service to the Church — ordained ministry or the covenant of family life.',
+};
+
+export const getSacrament = (id: string) => sacraments.find((s) => s.id === id);
