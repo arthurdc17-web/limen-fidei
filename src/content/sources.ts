@@ -46,7 +46,7 @@ export const sourceGroups: SourceGroup[] = [
   },
   {
     title: 'Photography',
-    description: 'Photographs used on this site are sourced from Wikimedia Commons. Individual licence terms and author credits are available on each file page.',
+    description: 'Photographs used on this site are sourced from Wikimedia Commons. Author and licence are listed in the image credits below, with a link to each file page.',
     items: [
       { name: 'Wikimedia Commons — Categories', url: 'https://commons.wikimedia.org/wiki/Category:Catholicism', note: 'Images of churches, sacred art, liturgical objects, and saints.' },
     ],

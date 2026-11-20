@@ -103,28 +103,36 @@ export default function SourcesPage() {
         <SectionTitle
           eyebrow="Photography"
           title="Image credits"
-          description="Photographs are served from Wikimedia Commons. Each file has its own author and licence; follow the file link for the full details before reusing an image."
+          description="Photographs are served from Wikimedia Commons. Author and licence are listed for each image; follow the file link for the full details before reusing it."
         />
         <div className="card overflow-hidden">
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[620px] text-left text-sm">
+            <table className="w-full min-w-[760px] text-left text-sm">
               <thead className="border-b border-[var(--border)] bg-[var(--surface)] text-xs uppercase tracking-wider text-[var(--text-muted)]">
                 <tr>
                   <th scope="col" className="px-5 py-3 font-semibold">Image</th>
+                  <th scope="col" className="px-5 py-3 font-semibold">Author</th>
+                  <th scope="col" className="px-5 py-3 font-semibold">Licence</th>
                   <th scope="col" className="px-5 py-3 font-semibold">Commons file</th>
-                  <th scope="col" className="px-5 py-3 font-semibold">Source</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[var(--border)]">
                 {imageCredits.map((credit) => (
                   <tr key={credit.file}>
                     <th scope="row" className="px-5 py-3 font-medium text-[var(--text)]">{credit.title}</th>
+                    <td className="px-5 py-3 text-[var(--text-muted)]">{credit.author}</td>
+                    <td className="px-5 py-3 text-[var(--text-muted)]">
+                      {credit.licenseUrl ? (
+                        <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="link-gold">
+                          {credit.license}<span className="sr-only"> (opens in a new tab)</span>
+                        </a>
+                      ) : credit.license}
+                    </td>
                     <td className="px-5 py-3">
                       <a href={commonsFileUrl(credit.file)} target="_blank" rel="noopener noreferrer" className="link-gold inline-flex items-center gap-1.5">
                         View file page <ExternalLink size={12} aria-hidden="true" /><span className="sr-only">for {credit.title} (opens in a new tab)</span>
                       </a>
                     </td>
-                    <td className="px-5 py-3 text-[var(--text-muted)]">{credit.source}</td>
                   </tr>
                 ))}
               </tbody>
